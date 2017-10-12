@@ -1,0 +1,6 @@
+PORTS = \
+  --publish 8080:8080 \
+  --publish 50000:50000 \
+
+VOLUMES = \
+  --volume /tmp/jenkins-home:/var/jenkins_home
