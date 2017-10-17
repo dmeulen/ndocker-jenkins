@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:2.73.2
 
 ENV \
-  INSTALL="libcairo2 libcairo2-dev ruby ruby-dev rubygems gcc make"
+  INSTALL="libcairo2 libcairo2-dev ruby ruby-dev rubygems gcc make python-setuptools python3-setuptools"
 
 USER root
 RUN apt-get update && \
