@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.73.3
+FROM jenkins/jenkins:2.101
 
 ENV \
   INSTALL="libcairo2 libcairo2-dev ruby ruby-dev rubygems gcc make python-setuptools python3-setuptools python3-pip python3-dev"
