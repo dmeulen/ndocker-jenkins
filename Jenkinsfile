@@ -16,5 +16,11 @@ pipeline {
           sh 'make build'
         }
       }
+      def tag = sh(returnStdout: true, script: "git tag --contains | head -1").trim()
+      if (tag) {
+        stage('Deploy Image') {
+          sh 'make push'
+        }
+      }
     }
 }
