@@ -13,9 +13,7 @@ pipeline {
       }
       stage ('Building Image') {
         steps {
-          script {
-            dockerImage = docker.build + ":$BUILD_NUMBER"
-          }
+          sh 'make build'
         }
       }
     }
