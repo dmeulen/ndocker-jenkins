@@ -11,5 +11,12 @@ pipeline {
           git url: 'git@github.com:dmeulen/ndocker-jenkins.git', credentialsId: 'git'
         }
       }
+      stage ('Building Image') {
+        steps {
+          script {
+            dockerImage = docker.build + ":$BUILD_NUMBER"
+          }
+        }
+      }
     }
 }
