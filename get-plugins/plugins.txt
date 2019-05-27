@@ -22,7 +22,6 @@ subversion:latest
 workflow-scm-step:latest
 cloudbees-folder:latest
 workflow-cps:latest
-gitlab-plugin:latest
 mapdb-api:latest
 workflow-multibranch:latest
 junit:latest
