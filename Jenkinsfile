@@ -21,7 +21,8 @@ pipeline {
           buildingTag()
         }
         steps {
-          sh 'make push'
+          sh 'make -e VERSION=$TAG_NAME tag'
+          sh 'make -e VERSION=$TAG_NAME push'
         }
       }
     }
