@@ -17,12 +17,9 @@ pipeline {
         }
       }
       stage('Deploy Image') {
-        when {
-          buildingTag()
-        }
         steps {
-          sh 'make -e VERSION=$TAG_NAME tag'
-          sh 'make -e VERSION=$TAG_NAME push'
+          sh 'make -e VERSION=$GIT_COMMIT tag'
+          sh 'make -e VERSION=$GIT_COMMIT push'
         }
       }
     }
