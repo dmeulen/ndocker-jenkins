@@ -4,4 +4,4 @@ id
 
 chown jenkins:jenkins /var/jenkins_home
 
-exec su - jenkins -c "/sbin/tini -- /usr/local/bin/jenkins.sh"
+su - jenkins -c "/sbin/tini -s -- /usr/local/bin/jenkins.sh"

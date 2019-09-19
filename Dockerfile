@@ -15,13 +15,7 @@ RUN gem install --no-ri --no-rdoc fpm
 RUN pip3 install --upgrade virtualenv
 RUN usermod -a -G docker jenkins
 
-COPY jenkins-wrap.sh /usr/local/bin/jenkins-wrap.sh
-
 USER jenkins
 
 COPY get-plugins/plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
-
-USER root
-
-ENTRYPOINT /usr/local/bin/jenkins-wrap.sh
