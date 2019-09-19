@@ -12,6 +12,7 @@ publish-over:latest
 gradle:latest
 jackson2-api:latest
 script-security:latest
+handy-uri-templates-2-api:latest
 pipeline-input-step:latest
 credentials-binding:latest
 ldap:latest
@@ -30,6 +31,7 @@ pipeline-model-declarative-agent:latest
 scm-api:latest
 ws-cleanup:latest
 pipeline-stage-tags-metadata:latest
+gitea:latest
 github-branch-source:latest
 git-client:latest
 pipeline-stage-step:latest
@@ -43,6 +45,7 @@ credentials:latest
 plain-credentials:latest
 token-macro:latest
 pipeline-stage-view:latest
+hashicorp-vault-plugin:latest
 publish-over-ssh:latest
 git-server:latest
 resource-disposer:latest
@@ -50,6 +53,7 @@ mail-watcher-plugin:latest
 debian-package-builder:latest
 ssh-slaves:latest
 dashboard-view:latest
+trilead-api:latest
 branch-api:latest
 github:latest
 pipeline-milestone-step:latest
