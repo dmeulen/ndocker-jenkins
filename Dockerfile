@@ -22,4 +22,6 @@ USER jenkins
 COPY get-plugins/plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
+USER root
+
 ENTRYPOINT /usr/local/bin/jenkins-wrap.sh
