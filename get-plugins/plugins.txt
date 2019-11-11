@@ -45,6 +45,7 @@ credentials:latest
 plain-credentials:latest
 token-macro:latest
 pipeline-stage-view:latest
+multiple-scms:latest
 hashicorp-vault-plugin:latest
 publish-over-ssh:latest
 git-server:latest
@@ -53,6 +54,7 @@ mail-watcher-plugin:latest
 debian-package-builder:latest
 ssh-slaves:latest
 dashboard-view:latest
+ssh-agent:latest
 trilead-api:latest
 branch-api:latest
 github:latest
@@ -72,7 +74,7 @@ workflow-support:latest
 docker-workflow:latest
 minio-storage:latest
 structs:latest
-mailer:1.27
+mailer:latest
 javadoc:latest
 maven-plugin:latest
 nomad:latest
