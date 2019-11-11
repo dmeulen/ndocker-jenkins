@@ -19,6 +19,7 @@ pipeline {
       stage('Deploy Image') {
         steps {
           withDockerRegistry([ credentialsId: 'theanimaldock-dockerhub', url: '' ]) {
+            sh 'env'
           	sh 'make -e VERSION=$GIT_COMMIT tag'
           	sh 'make -e VERSION=$GIT_COMMIT push'
           }
