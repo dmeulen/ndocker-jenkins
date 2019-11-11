@@ -17,6 +17,9 @@ pipeline {
         }
       }
       stage('Deploy Image') {
+        when {
+          buildingTag()
+        }
         steps {
           withDockerRegistry([ credentialsId: 'theanimaldock-dockerhub', url: '' ]) {
             sh 'env'
