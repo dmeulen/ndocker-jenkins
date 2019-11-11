@@ -13,6 +13,7 @@ pipeline {
       }
       stage ('Building Image') {
         steps {
+          sh 'env'
           sh 'make build'
         }
       }
